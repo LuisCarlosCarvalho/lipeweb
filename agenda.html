@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Aulas - Elite Artes Marciais</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-container">
+                <img src="imagens/logo.png" alt="Logo" class="logo">
+            </div>
+            <h1 class="site-title">Academia Elite</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="area-do-aluno.html">Área do Aluno</a></li>
+                <li><a href="trofeu.html">Troféus</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="agenda">
+        <h1>Agenda de Aulas</h1>
+        <p>Escolha a aula e agende sua participação.</p>
+
+        <div class="calendar">
+            <h2>Calendário de Aulas</h2>
+            <div id="calendar-container">
+                <!-- O calendário será gerado aqui via JavaScript -->
+            </div>
+        </div>
+
+        <div class="map-container">
+            <h2>Como Chegar</h2>
+            <!-- Mapa do Google Maps -->
+            <div id="map" style="height: 300px; width: 100%;"></div>
+        </div>
+
+        <div class="booking-form">
+            <h2>Agendar Aula</h2>
+            <form id="formAgendamento" action="#" method="POST">
+                <div class="input-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+                    <label for="whatsapp">WhatsApp:</label>
+                    <input type="text" id="whatsapp" name="whatsapp" placeholder="Digite seu número de WhatsApp" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                    <label for="aula">Selecione a Aula</label>
+                    <select id="aula" name="aula">
+                        <option value="Defesa Pessoal">Defessa Pessoal</option>
+                        <option value="jiu-jitsu">Jiu-Jitsu</option>
+                        <option value="Youga">Youga</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="data-agendamento">Data e Hora</label>
+                    <input type="datetime-local" id="data-agendamento" name="data-agendamento" required>
+                </div>
+                <div class="input-group">
+                    <button type="submit" class="btn">Agendar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- redes sociais -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/seuPerfil" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/seuPerfil" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/seuNumero" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/seuPerfil" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2025 Elite Artes Marciais. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/menu.js"></script> <!-- Se necessário -->
+    <script src="assets/js/form-contato.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/agenda.js"></script> <!-- Arquivo JS para calendário e funcionalidades -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+</body>
+</html>

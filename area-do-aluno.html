@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Aluno - Elite Artes Marciais</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-top">
+            <div class="logo-container">
+                <img src="imagens/logo.png" alt="Logo" class="logo">
+            </div>
+            <h1 class="site-title">Academia Elite</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="area-do-aluno.html">Área do Aluno</a></li>
+                <li><a href="trofeu.html">Troféus</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Área do Aluno -->
+    <section class="area-aluno">
+        <h1>Bem-vindo à sua Área do Aluno</h1>
+        <p>Aqui você pode acompanhar seu progresso, visualizar suas aulas agendadas e acessar outros conteúdos exclusivos.</p>
+
+        <!-- Progresso -->
+        <div class="progress">
+            <h2>Seu Progresso</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%"></div>
+            </div>
+            <p>Progresso: 75% - Você está indo muito bem!</p>
+        </div>
+
+        <!-- Box de Banner (lado direito) -->
+        <div class="aluno-container">
+            <div class="aluno-carousel">
+                <img src="imagens/aluno/001.jpeg" alt="Aluno 01">
+            </div>
+<br>
+            <!-- Aulas Agendadas -->
+            <div class="aulas">
+                <h2>Suas Aulas Agendadas</h2>
+                <ul>
+                    <li><strong>Defesa Pessoal - 25/03/2025</strong> - 18:00</li>
+                    <li><strong>Muay Thai - 27/03/2025</strong> - 19:00</li>
+                    <li><strong>Jiu-Jitsu - 29/03/2025</strong> - 17:00</li>
+                </ul>
+            </div>
+
+            <!-- Certificados Obtidos -->
+            <div class="certificados">
+                <h2>Certificados Obtidos</h2>
+                <ul>
+                    <li><strong>Defesa Pessoal</strong> - Certificado de Conclusão de Nível Iniciante</li>
+                    <li><strong>Muay Thai</strong> - Certificado de Participação em Workshop</li>
+                    <li><strong>Jiu-Jitsu</strong> - Certificado de Iniciação</li>
+                </ul>
+            </div>
+
+            <!-- Troféus -->
+            <div class="trofeus">
+                <h2>Seus Troféus</h2>
+                <ul>
+                    <li><strong>Campeonato Regional de Karate</strong> - 1º Lugar</li>
+                    <li><strong>Competição de Jiu-Jitsu</strong> - 2º Lugar</li>
+                </ul>
+            </div>
+<br>
+            <!-- Feedback -->
+            <div class="feedback">
+                <h2>Deixe seu Feedback</h2>
+                <form id="formFeedback" action="#" method="POST">
+                    <div class="input-group">
+                        <label for="feedback">Compartilhe sua experiência</label>
+                        <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="btn">Enviar Feedback</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé e Redes Sociais -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/seuPerfil" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/seuPerfil" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/seuNumero" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/seuPerfil" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2025 Elite Artes Marciais. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/menu.js"></script> <!-- Se necessário -->
+    <script src="assets/js/form-contato.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

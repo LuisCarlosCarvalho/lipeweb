@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Elite Artes Marciais</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-container">
+                <img src="imagens/logo.png" alt="Logo" class="logo">
+            </div>
+            <h1 class="site-title">Academia Elite</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="area-do-aluno.html">Área do Aluno</a></li>
+                <li><a href="trofeu.html">Troféus</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cadastro">
+        <h1>Cadastro de Aluno</h1>
+        <form id="formCadastro" action="#" method="POST">
+            <div class="input-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="input-group">
+                <label for="data-nascimento">Data de Nascimento</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+            </div>
+            <div class="input-group">
+                <label for="nivel">Nível de Habilidade</label>
+                <select id="nivel" name="nivel">
+                    <option value="iniciante">Iniciante</option>
+                    <option value="intermediario">Intermediário</option>
+                    <option value="avancado">Avançado</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <button type="submit" class="btn">Cadastrar</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- redes socias -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/seuPerfil" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/seuPerfil" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/seuNumero" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/seuPerfil" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+         <p>&copy; 2025 Elite Artes Marciais. Todos os direitos reservados.</p>
+    </footer>
+    <script src="assets/js/menu.js"></script> <!-- Se necessário -->
+    <script src="assets/js/form-contato.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/app.js"></script>   
+    
+</body>
+</html>
