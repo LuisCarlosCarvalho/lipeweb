@@ -1,0 +1,641 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cores principais */
+:root {
+  --preto: #000000;
+  --dourado: #FFD700;
+  --branco: #ffffff;
+  --cinza: #f5f5f5;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--preto);
+  color: var(--branco);
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--preto);
+  color: var(--dourado);
+  padding: 20px;
+  text-align: center;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo {
+  max-width: 70px;
+  height: auto;
+}
+
+.site-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--dourado);
+}
+
+/* Navegação */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: var(--dourado);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: var(--dourado);
+  color: var(--preto);
+}
+
+/* Seção Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, var(--dourado), #ffed4e);
+  color: var(--preto);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.hero .btn {
+  background-color: var(--preto);
+  color: var(--dourado);
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.hero .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Estilos gerais para seções */
+.cadastro, .agenda, .comunidade, .area-aluno, .trofeus, .novidades {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: var(--branco);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro h1, .agenda h1, .comunidade h1, .area-aluno h1, .trofeus h1, .novidades h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--preto);
+}
+
+.cadastro p, .agenda p, .comunidade p, .area-aluno p, .trofeus p, .novidades p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: var(--preto);
+}
+
+/* Formulários */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--preto);
+  font-weight: 500;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid var(--dourado);
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #cc9a00;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+}
+
+.input-group button {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--dourado);
+  color: var(--preto);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.input-group button:hover {
+  background-color: #cc9a00;
+  transform: translateY(-1px);
+}
+
+/* Página de Contato */
+.contact-container {
+  display: flex;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.contact-form-container {
+  flex: 1;
+  min-width: 300px;
+  background-color: var(--branco);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  color: var(--preto);
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.banner-container {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-carousel {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.banner-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.banner-carousel img:first-child {
+  opacity: 1;
+}
+
+/* Área do Aluno */
+.aluno-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.aluno-carousel {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aluno-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.progress {
+  margin-bottom: 30px;
+}
+
+.progress h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--preto);
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 25px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--dourado), #ffed4e);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.aulas, .certificados, .trofeus, .feedback {
+  background-color: var(--cinza);
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.aulas h2, .certificados h2, .trofeus h2, .feedback h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--preto);
+}
+
+.aulas ul, .certificados ul, .trofeus ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.aulas li, .certificados li, .trofeus li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--preto);
+  padding: 10px;
+  background-color: var(--branco);
+  border-radius: 5px;
+  border-left: 4px solid var(--dourado);
+}
+
+/* Troféus */
+.trophy-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.trophy-item {
+  background-color: var(--branco);
+  border: 2px solid var(--dourado);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.trophy-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.trophy-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.trophy-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.trophy-item h2 {
+  font-size: 1.3rem;
+  color: var(--preto);
+  margin-bottom: 10px;
+}
+
+.trophy-item p {
+  font-size: 1.1rem;
+  color: var(--preto);
+}
+
+/* Comunidade */
+.comunidade-posts {
+  margin-bottom: 40px;
+}
+
+.comunidade-posts h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: var(--preto);
+}
+
+.post {
+  background-color: var(--cinza);
+  border: 2px solid var(--dourado);
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 25px;
+  transition: transform 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-2px);
+}
+
+.post h3 {
+  font-size: 1.4rem;
+  color: var(--preto);
+  margin-bottom: 15px;
+}
+
+.post p {
+  font-size: 1rem;
+  color: var(--preto);
+  margin-bottom: 20px;
+}
+
+.post button {
+  background-color: var(--dourado);
+  color: var(--preto);
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post button:hover {
+  background-color: #cc9a00;
+}
+
+/* Novidades */
+.news-item {
+  background-color: var(--cinza);
+  border: 2px solid var(--dourado);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.news-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.news-item h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: var(--preto);
+}
+
+.news-item p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: var(--preto);
+}
+
+.news-item .btn {
+  background-color: var(--dourado);
+  color: var(--preto);
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.news-item .btn:hover {
+  background-color: #cc9a00;
+  transform: translateY(-1px);
+}
+
+/* Agenda */
+.calendar {
+  margin-bottom: 40px;
+  background-color: var(--cinza);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.calendar h2 {
+  font-size: 1.8rem;
+  color: var(--preto);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#calendar-container {
+  font-size: 1.2rem;
+  color: var(--preto);
+  text-align: center;
+  padding: 20px;
+  background-color: var(--branco);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+  margin: 40px 0;
+  background-color: var(--cinza);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.map-container h2 {
+  font-size: 1.8rem;
+  color: var(--preto);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form {
+  background-color: var(--cinza);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.booking-form h2 {
+  font-size: 1.8rem;
+  color: var(--preto);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Rodapé */
+footer {
+  background: linear-gradient(135deg, var(--preto), #333);
+  color: var(--branco);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 215, 0, 0.1);
+  color: var(--dourado);
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.social-icons a:hover {
+  background: var(--dourado);
+  color: var(--preto);
+  transform: translateY(-3px);
+  border-color: var(--dourado);
+}
+
+footer p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .site-title {
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .banner-carousel {
+    height: 400px;
+  }
+  
+  .trophy-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .cadastro, .agenda, .comunidade, .area-aluno, .trofeus, .novidades {
+    margin: 20px auto;
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 15px;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .site-title {
+    font-size: 1.5rem;
+  }
+  
+  .social-icons {
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
